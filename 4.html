@@ -10,28 +10,83 @@
     text-decoration: none;
   }
 
+body{
+  margin: 0;
+}
+
+h1{
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding:20px;
+  text-align: center;
+}
   .saw{
     color:blue;
     text-decoration: underline;
+
   }
+
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+
+  #grid ol{
+    padding-left: 20px;
+  }
+
+  ol{
+    border-right:1px solid gray;
+    width:90px;
+    margin:0;
+    padding: 20px;
+  }
+
+  #grid #article{
+    padding-left: 3px;
+  }
+
+
+@media(max-width:650px){
+h1{
+  text-align: left;
+}
+
+#grid{
+  display: block;
+}
+
+ol{
+  border-right: none;
+}
+
+h2{
+  margin: 3px;
+}
+}
   </style>
 </head>
 
 <body>
+
+
   <h1><a href="index.html"> BEER DAY </a></h1>
+  <div id = "grid">
 <ol>
   <li> <a href="4.html" class="saw">IPA  </a></li>
   <li> <a href="2.html">LAGER  </a></li>
   <li> <a href="3.html">PALE BEER </a></li>
 </ol>
-
+<div id="article">
 <h2> IPA 에 대해 알아보자 </h2>
 
 
-<br><br>
+<br>
 <img src="beer.jpg" width="400">
   <p> <a href="http://www.worldbeerawards.com/winner/beer/2019/taste" target="_blank">2019년 최고의 맥주를 뽑아라!</a> 많은 종류와 맛을 기준으로 하여 시상식이 진행됐습니다.
-</p><p style="margin-top:40px;">
+</p>
+</div>
+</div>
 </body>
 
 </html>
